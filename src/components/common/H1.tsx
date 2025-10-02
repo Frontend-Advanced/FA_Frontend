@@ -5,7 +5,7 @@ interface H1Props {
 
 const H1: React.FC<H1Props> = ({ children, className }) => {
 
-  const defaultClasses = 'text-4xl font-bold leading-10 text-[#000000]';
+  const defaultClasses = 'text-2xl font-bold leading-10 text-[#000000]';
 
   const combinedClasses = `${defaultClasses} ${className || ''}`.trim();
 
