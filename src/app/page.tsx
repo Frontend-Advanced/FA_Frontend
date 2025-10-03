@@ -1,10 +1,14 @@
 import Hero from "@/components/main/Hero";
+import MainContainer from "@/components/main/MainContainer";
 
 const HomePage = () => {
   return (
-    <main className="w-full flex justify-center items-center ">
-      <div className="max-w-6xl h-full flex flex-1 items-start justify-between md:flex-row flex-col gap-y-10">
+    <main className="flex justify-center items-center ">
+      <div className="max-w-6xl">
       <Hero/>
+      <div className="md:py-8 py-4">
+        <MainContainer/>
+      </div>
       </div>
     </main>
   );
