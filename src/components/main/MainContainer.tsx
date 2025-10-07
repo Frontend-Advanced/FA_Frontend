@@ -8,21 +8,20 @@ const MainContainer = () => {
   return (
     <>
       <div className="lg:py-1 ">
-        
         {/* First Section */}
-        <Section 
+        <Section
           item={section1} // first object passed as prop
           className="rounded-2xl "
         />
-        
+
         {/* Second Section*/}
-        <Section 
+        <Section
           item={section2} // second object passed as prop
           className="md:flex-row-reverse"
         />
-        
+
         {/* Third Section*/}
-        <Section 
+        <Section
           item={section3} // third object passed as prop
           className="md:w-[430px]"
         />
