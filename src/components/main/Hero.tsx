@@ -1,5 +1,5 @@
+import Image from "next/image";
 import H1 from "../common/H1";
-// import HeroSectionImage from "../../assets/Hero-section-image.png";
 
 const Hero = () => {
   return (
@@ -14,8 +14,10 @@ const Hero = () => {
           </div>
 
           <div className="md:mt-16 mt-8">
-            <img
-              src="Hero-section-image.png"
+            <Image
+              width={800}
+              height={800}
+              src="/Hero-section-image.png"
               alt="This img tag contain the image for Hero Section"
               className="w-full object-cover md:rounded-3xl rounded-xl"
             />
