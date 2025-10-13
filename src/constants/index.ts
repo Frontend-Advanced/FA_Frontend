@@ -59,3 +59,30 @@ export const USER_SOCIALS_ICONS = [
   { id: 3, label: "LinkedIn", src: "/icons/linkedIn.png" },
   { id: 4, label: "GitHub", src: "/icons/github.svg" },
 ];
+
+export interface UserProfileTabItem {
+  id: string;
+  label: string;
+  heading?: string;
+  content: string;
+}
+
+export const USER_PROFILE_TABS: UserProfileTabItem[] = [
+  {
+    id: "achievements",
+    label: "Achievements",
+    heading: "System architect",
+    content:
+      "Responsible for designing and overseeing complex enterprise technical implementation with business objectives, define architectural standards, and guides development teams through strategic technology decisions",
+  },
+  {
+    id: "trophies",
+    label: "Trophies",
+    content: "trophies.....",
+  },
+  {
+    id: "badges",
+    label: "Badges",
+    content: "list of badges.....",
+  },
+];

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProfileCard from "@/app/(user)/components/profile-card";
+import ProfileTabs from "../components/profile-tabs";
 
 const UserProfile = () => {
   return (
@@ -26,6 +27,9 @@ const UserProfile = () => {
           <ProfileCard />
         </div>
       </div>
+
+      {/* profile tabs */}
+      <ProfileTabs />
     </div>
   );
 };
