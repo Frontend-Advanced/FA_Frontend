@@ -22,12 +22,12 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="border w-full sm:w-[60%] md:w-[40%] lg:w-[30%] flex items-center gap-3">
+    <div className=" w-full sm:w-[60%] md:w-[40%] lg:w-[30%] flex items-center gap-3">
       {/* Search input with icon */}
       <div
         className={`flex md:items-center transition-all duration-500 ease-in-out ${
           expanded
-            ? "w-[60%] border border-gray-200 rounded-full p-1 md:px-3 md:py-1 bg-white text-gray-700"
+            ? "w-[60%] border border-gray-200 rounded-full md:px-3 py-1 bg-white text-gray-700"
             : "p-[4px] md:p-1 justify-center bg-black text-white rounded-full cursor-pointer"
         }`}
         onClick={!expanded ? handleExpand : undefined}
