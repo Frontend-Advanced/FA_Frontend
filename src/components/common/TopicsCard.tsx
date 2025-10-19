@@ -1,6 +1,15 @@
 import { Clock, Boxes, Video, Code, BookMinus } from "lucide-react";
+import StatItem from "./StatItems";
 
 const TopicsCard = () => {
+
+  const stats = [
+    { icon: <Boxes size={15} className="text-[#02542D]" />, label: "Diagrams", value: 5 },
+    { icon: <Video size={15} className="text-[#02542D]" />, label: "Videos", value: 7 },
+    { icon: <Code size={15} className="text-[#02542D]" />, label: "Practices", value: 5 },
+    { icon: <BookMinus size={15} className="text-[#02542D]" />, label: "Examples", value: 5 },
+  ];
+
   return (
     <div className=" hover:scale-[1.02] duration-300 ">
       {/* Image Section */}
@@ -31,27 +40,10 @@ const TopicsCard = () => {
         </p>
 
         {/* Stats Row */}
-        <div className=" flex items-center my-4 flex-wrap justify-between space-x-0.5 font-bold ">
-          <div className="flex items-center gap-1 ">
-            <Boxes size={15} className="text-[#02542D]"/>
-            {/* Daigrams */}
-            <span className="text-[10px]">5 Diagrams</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Video size={15} className="text-[#02542D]"/>
-            {/* Videos */}
-            <span className="text-[10px]">7 Videos</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Code size={15} className="text-[#02542D]"/>
-            {/* Practices */}
-            <span className="text-[10px]">5 Practices</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <BookMinus size={15} className="text-[#02542D]"/>
-            {/* Examples */}
-            <span className="text-[10px]">5 Examples</span>
-          </div>
+        <div className="flex items-center my-4 flex-wrap justify-between space-x-0.5">
+          {stats.map((item, index) => (
+            <StatItem key={index} icon={item.icon} label={item.label} value={item.value} />
+          ))}
         </div>
 
         {/* Button */}
