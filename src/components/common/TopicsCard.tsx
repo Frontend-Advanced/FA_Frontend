@@ -1,4 +1,4 @@
-import { Clock, BookOpen, Video, ClipboardCheck, FileText } from "lucide-react";
+import { Clock, Boxes, Video, Code, BookMinus } from "lucide-react";
 
 const TopicsCard = () => {
   return (
@@ -33,7 +33,7 @@ const TopicsCard = () => {
         {/* Stats Row */}
         <div className=" flex items-center my-4 flex-wrap justify-between space-x-0.5 font-bold ">
           <div className="flex items-center gap-1 ">
-            <BookOpen size={15} className="text-[#02542D]"/>
+            <Boxes size={15} className="text-[#02542D]"/>
             {/* Daigrams */}
             <span className="text-[10px]">5 Diagrams</span>
           </div>
@@ -43,12 +43,12 @@ const TopicsCard = () => {
             <span className="text-[10px]">7 Videos</span>
           </div>
           <div className="flex items-center gap-1">
-            <ClipboardCheck size={15} className="text-[#02542D]"/>
+            <Code size={15} className="text-[#02542D]"/>
             {/* Practices */}
             <span className="text-[10px]">5 Practices</span>
           </div>
           <div className="flex items-center gap-1">
-            <FileText size={15} className="text-[#02542D]"/>
+            <BookMinus size={15} className="text-[#02542D]"/>
             {/* Examples */}
             <span className="text-[10px]">5 Examples</span>
           </div>
