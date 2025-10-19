@@ -5,7 +5,7 @@ import FilterSortBar from "../common/FilterSortBar";
 
 const TopicsNav = () => {
   return (
-    <nav className="flex justify-between items-center my-[8px] py-[8px] w-full border border-green-600">
+    <nav className="flex justify-between items-center my-[8px] py-[8px] w-full">
       {/* left Navigation Part */}
       <SearchBar />
       {/* right Navigation Part*/}

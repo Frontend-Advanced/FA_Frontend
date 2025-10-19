@@ -33,7 +33,7 @@ const SearchBar = () => {
         onClick={!expanded ? handleExpand : undefined}
       >
         {/* Search Icon */}
-        <Search className="cursor-pointer w-[20px] h-[20px] md:w-[28px] md:h-[28px]" />
+        <Search className="cursor-pointer w-[20px] h-[20px] md:w-[24px] md:h-[24px]" />
 
         {/* Input field (hidden when collapsed) */}
         {expanded && (
