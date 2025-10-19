@@ -28,7 +28,7 @@ const TopicsCard: React.FC<TopicsCardProps> = ({
       {/* Image Section */}
       <img
         src={imageUrl}
-        alt={title}
+        alt={`This image contains the data for ${title}`}
         className="object-cover w-full h-2/3 border border-[#D9D9D9] rounded-xl"
       />
 
@@ -36,12 +36,12 @@ const TopicsCard: React.FC<TopicsCardProps> = ({
       <div className="p-2.5 bg-[#D9D9D9] rounded-xl -mt-6 sm:-mt-14 md:-mt-6 lg:-mt-8 z-5 md:z-10 relative">
         <div className="flex justify-between items-center">
           {/* Title */}
-          <a href="#" className="text-sm lg:text-lg font-bold hover:underline">
+          <a href="#" className="text-sm lg:text-medium font-bold hover:underline">
             {title}
           </a>
 
           {/* Duration */}
-          <div className="flex items-center text-sm">
+          <div className="flex items-center text-sm md:text-medium">
             <Clock size={16} className="mr-1 text-[#02542D]" />
             <span className="font-bold">{duration}</span>
           </div>
