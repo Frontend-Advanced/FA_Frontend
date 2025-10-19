@@ -5,13 +5,22 @@ import FilterSortBar from "../common/FilterSortBar";
 
 interface TopicsNavProps {
   onSearch: (query: string) => void;
+  onFilterChange: (filter: string) => void;
+  onSortChange: (sort: string) => void;
 }
 
-const TopicsNav: React.FC<TopicsNavProps> = ({ onSearch }) => {
+const TopicsNav: React.FC<TopicsNavProps> = ({
+  onSearch,
+  onFilterChange,
+  onSortChange,
+}) => {
   return (
     <nav className="flex justify-between items-center my-[8px] py-[8px] w-full">
       <SearchBar onSearch={onSearch} />
-      <FilterSortBar />
+      <FilterSortBar
+        onFilterChange={onFilterChange}
+        onSortChange={onSortChange}
+      />
     </nav>
   );
 };
