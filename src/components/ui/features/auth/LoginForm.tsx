@@ -3,7 +3,7 @@ import Image from "next/image";
 import { type ChangeEvent, type FormEvent, useId, useState } from "react";
 import github from "@/assets/github.png";
 import google from "@/assets/google.png";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/legacy-input";
 
 interface LoginValues {
 	name: string;
