@@ -10,8 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
 import { Separator } from "../../separator";
-import github from "@/assets/github.png";
-import google from "@/assets/google.png";
 
 const schema = z.object({
 	email: z.email(),
@@ -78,11 +76,11 @@ export default function RegisterForm () {
 
 			<div className="flex flex-col gap-4">
 				<Button variant="outline" type="button" className="w-full border-gray-600">
-					<Image src={github} alt="github" width={25} height={24} />
+					<Image src="/github.png" alt="github" width={25} height={24} />
 					Github
 				</Button>
 				<Button variant="outline" type="button" className="w-full border-gray-600">
-					<Image src={google} alt="google" width={25} height={24} />
+					<Image src="/google.png" alt="google" width={25} height={24} />
 					Google
 				</Button>
 			</div>
