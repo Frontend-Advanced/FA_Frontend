@@ -1,5 +1,5 @@
 "use client";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/legacy-input";
 import Image from "next/image";
 import { type ChangeEvent, type FormEvent, useId, useState } from "react";
 
