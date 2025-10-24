@@ -1,0 +1,14 @@
+generator client {
+  provider        = "prisma-client-js"
+  output          = "./src/generated/prisma"
+  previewFeatures = ["clientExtensions"]
+  binaryTargets   = ["native"]
+  engineType      = "binary"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+  schemas   = ["auth", "public"]
+}
