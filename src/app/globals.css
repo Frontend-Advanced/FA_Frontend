@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 body {
 	margin: 0;
@@ -35,3 +38,4 @@ body {
 .btn-social:focus {
 	@apply outline-none ring-2 ring-offset-2 ring-[#222];
 }
+
